@@ -112,6 +112,7 @@ function filtrarValores(){
     const saidas = document.querySelector(".botaoSaidas")
 
     todos.addEventListener("click", ()=>{
+
         renderizarLi(valoresInseridos)
     })
 
