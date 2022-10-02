@@ -8,10 +8,34 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/botoes.css">
+    <link rel="stylesheet" href="/styles/modal.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <main id="app"></main>
+    <header>
+        <div class="container displayFlex">
+            <h1 class="logotipo">Control <span>Finance</span></h1>
+            <button class="botaoRegistrar botaoBase botaoRoxo">Registrar Novo Valor</button>
+        </div>
+    </header>
+    <main id="app" class="container">
+        <section class="resumoFinanceiro">
+            <h2>Resumo Financeiro</h2>
+            <div class="botoesContainer">
+                <button class="botaoTodos botaoBase botaoBranco">Todos</button>
+                <button class="botaoEntradas botaoBase botaoBranco">Entradas</button>
+                <button class="botaoSaidas botaoBase botaoBranco">Saídas</button>
+            </div>
+            <div class="somaContainer">
+                <p class="textoSoma">Soma dos Valores</p>
+                <p class="valorSoma">R$ 0.00</p>
+            </div>
+        </section>
+        <section class="listaEntradasSaidas"> 
+            <ul></ul>
+        </section>
+    </main>
     <script src="/scripts/modal.js"></script>
     <script src="valuesData.js"></script>
     <script src="index.js"></script>

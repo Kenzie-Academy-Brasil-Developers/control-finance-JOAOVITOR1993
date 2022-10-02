@@ -1,0 +1,140 @@
+.coberturaModal{
+    background-color: var( --color-grey-1-opacity-5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    max-width: 43rem;
+    margin: 0 1rem;
+    background-color: var(--fixed-white);
+    border-radius: var(--radius-1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    animation: animacaoModal 1s;
+}
+
+.cabecalhoModal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cabecalhoModal h2{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-1);
+}
+
+.modal p{
+    font-size: var(--font-size-3);
+    color: var(--color-grey-2);
+    margin-bottom: 1.5rem;
+}
+
+.modal label{
+    font-size: var(--font-size-3);
+    color: var(--color-grey-2);
+    font-weight: var(--font-weight-1);
+    margin-bottom: 0.4rem;
+}
+
+.modal input{
+    font-size: var(--font-size-3);
+    color: var(--color-grey-2);
+    border: solid 1px var(--color-grey-3);
+    border-radius: var(--radius-1);
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal input::placeholder{
+    font-family: var(--font-family-1);
+    padding-left: 0.5rem;
+}
+
+.botoesDesktop p{
+    font-size: var(--font-size-3);
+    color: var(--color-grey-2);
+    font-weight: var(--font-weight-1);
+    margin-bottom: 1rem;
+}
+
+.botoesTipoValor{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoesCancelarInserir{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botaoCancelar{
+    width: 48%;
+}
+
+.botaoInserir{
+    width: 48%;
+}
+
+@keyframes animacaoModal{
+    0%{
+        opacity: 0;
+        transform:translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+}
+
+@media (min-width: 769px){
+    .botoesDesktop{
+        display: flex;
+        flex-direction: row;
+        justify-content:start;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .botoesTipoValor{
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .botaoEntrada{
+        margin-bottom: 0;
+    }
+    
+    .botaoSaida{
+        margin-bottom: 0;
+    }
+
+    .botoesDesktop p{
+        margin-bottom: 0;
+    }
+
+    .botoesCancelarInserir{
+        display: flex;
+        justify-content: end;
+        gap: 1rem;
+    }
+
+    .botaoCancelar{
+        width: auto;
+    }
+    
+    .botaoInserir{
+        width: auto;
+    }
+}
