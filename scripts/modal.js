@@ -45,6 +45,7 @@ function criarModal(){
     input.type = "number"
     input.name = "valor"
     input.className = "inputValor"
+    input.required = "true"
     input.placeholder = "R$ 0,00"
     divBotoesDesk.className = "botoesDesktop"
     p2.innerText = "Tipo de Valor"
